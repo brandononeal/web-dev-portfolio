@@ -1,9 +1,19 @@
-import "./App.css";
+import "./styles/App.css";
+import { Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div className="App">
-      <h1>Brandon O'Neal</h1>
+      <Navbar />
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/" component={Home} />
+      </Switch>
     </div>
   );
 }
