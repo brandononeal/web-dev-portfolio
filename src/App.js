@@ -1,4 +1,5 @@
 import "./styles/index.css";
+import "antd/dist/antd.css";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
