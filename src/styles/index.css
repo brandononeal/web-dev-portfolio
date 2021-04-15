@@ -24,3 +24,10 @@ code {
 .Navbar h2 {
   margin: 1% 0 0 1%;
 }
+
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 25%;
+}
