@@ -2,6 +2,7 @@ import "./styles/index.css";
 import "antd/dist/antd.css";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/" component={Home} />
       </Switch>
+      <Footer />
     </div>
   );
 }

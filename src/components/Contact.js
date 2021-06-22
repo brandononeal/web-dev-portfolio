@@ -1,51 +1,70 @@
-import React, { useState } from "react";
+import React from "react";
+import { Form, Input, Button } from "antd";
 
-const initialFormValues = {
-  name: "",
-  email: "",
-  message: "",
+const layout = {
+  labelCol: {
+    span: 8,
+  },
+  wrapperCol: {
+    span: 16,
+  },
 };
+/* eslint-disable no-template-curly-in-string */
+
+const validateMessages = {
+  required: "${label} is required!",
+  types: {
+    email: "${label} is not a valid email!",
+  },
+};
+/* eslint-enable no-template-curly-in-string */
 
 function Contact() {
-  const [formValues, setFormValues] = useState(initialFormValues);
-
-  const change = (e) => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value });
-  };
-
-  const submit = (e) => {
-    e.preventDefault();
-    console.log("submit");
+  const onFinish = (values) => {
+    console.log(values);
   };
 
   return (
     <div className="Contact">
       <h1>Contact</h1>
       <p>Let's get in touch!</p>
-      <form onSubmit={submit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formValues.name}
-          onChange={change}
-        ></input>
-        <input
-          type="text"
-          name="email"
-          placeholder="Email"
-          value={formValues.email}
-          onChange={change}
-        ></input>
-        <input
-          type="text"
-          name="message"
-          placeholder="Message"
-          value={formValues.message}
-          onChange={change}
-        ></input>
-        <button>Submit</button>
-      </form>
+      <Form
+        {...layout}
+        name="nest-messages"
+        onFinish={onFinish}
+        validateMessages={validateMessages}
+      >
+        <Form.Item
+          name={["user", "name"]}
+          label="Name"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
+          name={["user", "email"]}
+          label="Email"
+          rules={[
+            {
+              type: "email",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item name={["user", "introduction"]} label="Introduction">
+          <Input.TextArea />
+        </Form.Item>
+        <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
   );
 }
