@@ -1,9 +1,11 @@
 import React from "react";
 import { RocketOutlined, GithubOutlined } from "@ant-design/icons";
+import { Divider } from "antd";
 
 function Projects() {
   return (
     <div className="Projects">
+      <br />
       <div className="banner section1">
         <div className="paralax" />
       </div>
@@ -43,6 +45,7 @@ function Projects() {
       </div>
 
       <br />
+      <Divider />
       <br />
       <div className="banner section2">
         <div className="paralax" />
@@ -83,6 +86,7 @@ function Projects() {
       </div>
 
       <br />
+      <Divider />
       <br />
       <div className="banner section3">
         <div className="paralax" />
@@ -119,6 +123,7 @@ function Projects() {
       </div>
 
       <br />
+      <Divider />
       <br />
       <div className="banner section4">
         <div className="paralax" />
@@ -140,7 +145,20 @@ function Projects() {
         >
           <GithubOutlined /> Link to GitHub
         </a>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </li>
+          <li>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat
+          </li>
+        </ul>
       </div>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
