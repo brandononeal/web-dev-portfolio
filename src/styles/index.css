@@ -38,13 +38,6 @@ body {
 
 /* MAIN STYLES */
 
-.Home {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 25%;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -52,6 +45,13 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25%;
 }
 
 .Home h1 {

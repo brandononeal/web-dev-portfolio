@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "antd";
-import {
-  CodeOutlined,
-  MailOutlined,
-  FileTextOutlined,
-  GithubOutlined,
-  LinkedinOutlined,
-} from "@ant-design/icons";
+import { CodeOutlined, MailOutlined } from "@ant-design/icons";
 
 function Navbar() {
   const [current, setCurrent] = useState("home");
@@ -27,24 +21,6 @@ function Navbar() {
         </Menu.Item>
         <Menu.Item key="contact" icon={<MailOutlined />}>
           <Link to="/contact">Contact</Link>
-        </Menu.Item>
-        <Menu.Item key="resume" icon={<FileTextOutlined />}>
-          <a
-            href="https://docs.google.com/document/d/1DV-lUf8bv02Be29jFoH-4b_TUGkMLsYCSMpRE5BTtvQ/edit"
-            target="blank"
-          >
-            Resume
-          </a>
-        </Menu.Item>
-        <Menu.Item key="github" icon={<GithubOutlined />}>
-          <a href="https://www.github.com/brandononeal" target="blank">
-            GitHub
-          </a>
-        </Menu.Item>
-        <Menu.Item key="linkedin" icon={<LinkedinOutlined />}>
-          <a href="https://www.linkedin.com/in/brandonaoneal" target="blank">
-            LinkedIn
-          </a>
         </Menu.Item>
       </Menu>
     </div>

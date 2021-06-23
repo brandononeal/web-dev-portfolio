@@ -1,3 +1,8 @@
+import {
+  FileTextOutlined,
+  GithubOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
 import React from "react";
 
 function Footer() {
@@ -11,13 +16,13 @@ function Footer() {
           href="https://docs.google.com/document/d/1DV-lUf8bv02Be29jFoH-4b_TUGkMLsYCSMpRE5BTtvQ/edit"
           target="blank"
         >
-          Resume{" "}
+          <FileTextOutlined /> Resume{" "}
         </a>
         <a href="https://www.github.com/brandononeal" target="blank">
-          GitHub{" "}
+          <GithubOutlined /> GitHub{" "}
         </a>
         <a href="https://www.linkedin.com/in/brandonaoneal" target="blank">
-          LinkedIn
+          <LinkedinOutlined /> LinkedIn
         </a>
       </div>
     </div>
