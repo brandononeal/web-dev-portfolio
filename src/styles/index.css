@@ -76,6 +76,11 @@ body {
   color: #7952b3;
 }
 
+.Projects ul,
+.Projects p {
+  text-align: justify;
+}
+
 .Contact form {
   margin: 0 auto;
   width: 50%;
