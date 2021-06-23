@@ -26,8 +26,7 @@ function Contact() {
 
   return (
     <div className="Contact">
-      <h1>Contact</h1>
-      <p>Let's get in touch!</p>
+      <br />
       <Form
         {...layout}
         name="nest-messages"
@@ -56,7 +55,7 @@ function Contact() {
         >
           <Input />
         </Form.Item>
-        <Form.Item name={["user", "introduction"]} label="Introduction">
+        <Form.Item name={["user", "message"]} label="Message">
           <Input.TextArea />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>

@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 body {
   margin: 0;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -7,6 +9,8 @@ body {
   text-align: center;
 }
 
+/* NAV & FOOTER */
+
 .Navbar {
   display: flex;
   justify-content: space-between;
@@ -14,12 +18,12 @@ body {
 
 .Navbar h2 {
   margin: 1% 0 0 1%;
-  color: #7952b3;
 }
 
 .Footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: absolute;
   color: #e1e8eb;
   background-color: #7952b3;
@@ -30,6 +34,43 @@ body {
 
 .Footer h2 {
   color: #e1e8eb;
+}
+
+/* MAIN STYLES */
+
+.Home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Home h1 {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+.Home h2 {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+.Home span {
+  color: #ffc107;
+}
+
+.Projects {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .Contact form {
