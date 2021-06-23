@@ -14,13 +14,22 @@ body {
 
 .Navbar h2 {
   margin: 1% 0 0 1%;
+  color: #7952b3;
 }
 
 .Footer {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
+  color: #e1e8eb;
+  background-color: #7952b3;
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.Footer h2 {
+  color: #e1e8eb;
 }
 
 .Contact form {
