@@ -20,18 +20,29 @@ body {
   margin: 1% 0 0 1%;
 }
 
+.Navbar a {
+  color: #343a40;
+}
+
+.Navbar a:hover {
+  color: #7952b3;
+}
+
 .Footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
   background-color: #7952b3;
+  min-height: 50px;
   left: 0;
   bottom: 0;
   right: 0;
 }
 
-.Footer h2 {
+.Footer h2,
+.Footer a {
+  margin: 0 auto;
   color: #e1e8eb;
 }
 
@@ -53,11 +64,7 @@ body {
   margin-top: 25%;
 }
 
-.Home h1 {
-  animation-name: fade-in;
-  animation-duration: 5s;
-}
-
+.Home h1,
 .Home h2 {
   animation-name: fade-in;
   animation-duration: 5s;
@@ -79,6 +86,33 @@ body {
 .Projects ul,
 .Projects p {
   text-align: justify;
+}
+
+.banner {
+  padding: 4%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3%;
+  margin-bottom: 4%;
+  border: 2px solid #ffc107;
+}
+
+.section1 {
+  background-image: url(../images/shelter-management-system.PNG);
+}
+
+.section2 {
+  background-image: url(../images/service-tracker.PNG);
+}
+
+.section3 {
+  background-image: url(../images/anywhere-fitness.PNG);
+}
+
+.section4 {
+  background-image: url(../images/water-my-plants.PNG);
 }
 
 .Contact form {
