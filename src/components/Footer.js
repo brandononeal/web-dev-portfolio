@@ -14,14 +14,23 @@ function Footer() {
       <div className="footer-right">
         <a
           href="https://docs.google.com/document/d/1DV-lUf8bv02Be29jFoH-4b_TUGkMLsYCSMpRE5BTtvQ/edit"
-          target="blank"
+          target="_blank"
+          rel="noreferrer"
         >
           <FileTextOutlined /> Resume{" "}
         </a>
-        <a href="https://www.github.com/brandononeal" target="blank">
+        <a
+          href="https://www.github.com/brandononeal"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GithubOutlined /> GitHub{" "}
         </a>
-        <a href="https://www.linkedin.com/in/brandonaoneal" target="blank">
+        <a
+          href="https://www.linkedin.com/in/brandonaoneal"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedinOutlined /> LinkedIn
         </a>
       </div>

@@ -72,6 +72,10 @@ body {
   margin: 0 auto;
 }
 
+.Projects h2 {
+  color: #7952b3;
+}
+
 .Contact form {
   margin: 0 auto;
   width: 50%;
