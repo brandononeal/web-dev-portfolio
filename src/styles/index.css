@@ -46,6 +46,10 @@ body {
   color: #e1e8eb;
 }
 
+.Footer a:hover {
+  color: #ffc107;
+}
+
 /* MAIN STYLES */
 
 @keyframes fadeIn {
