@@ -48,8 +48,11 @@ body {
 
 /* MAIN STYLES */
 
-@keyframes fade-in {
+@keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  45% {
     opacity: 0;
   }
   100% {
@@ -57,16 +60,52 @@ body {
   }
 }
 
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffc107;
+  }
+}
+
+.typewriter {
+  font-family: Courier, monospace;
+  display: inline-block;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 1.75s steps(12, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid #ffc107;
+  box-sizing: border-box;
+}
+
 .Home {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 25%;
 }
 
-.Home h1,
 .Home h2 {
-  animation-name: fade-in;
+  animation-name: fadeIn;
   animation-duration: 5s;
 }
 
