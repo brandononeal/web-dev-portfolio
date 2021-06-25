@@ -11,10 +11,37 @@ function Home() {
       </div>
       <br />
       <h2>
-        check out some of my <Link to="/projects">projects</Link>
+        <Link to="/projects">Projects/</Link>
       </h2>
       <h2>
-        and feel free to <Link to="/contact">reach out</Link>
+        <Link to="/contact">Contact/</Link>
+      </h2>
+      <h2>
+        <a
+          href="https://docs.google.com/document/d/1DV-lUf8bv02Be29jFoH-4b_TUGkMLsYCSMpRE5BTtvQ/edit"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume/
+        </a>
+      </h2>
+      <h2>
+        <a
+          href="https://www.github.com/brandononeal"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub/
+        </a>
+      </h2>
+      <h2>
+        <a
+          href="https://www.linkedin.com/in/brandonaoneal"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn/
+        </a>
       </h2>
     </div>
   );

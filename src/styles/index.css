@@ -25,7 +25,7 @@ body {
 }
 
 .Navbar a:hover {
-  color: #7952b3;
+  color: #ffc107;
 }
 
 .Footer {
@@ -107,6 +107,14 @@ body {
 .Home h2 {
   animation-name: fadeIn;
   animation-duration: 5s;
+}
+
+.Home a {
+  color: #343a40;
+}
+
+.Home a:hover {
+  color: #ffc107;
 }
 
 .Home span {
