@@ -165,7 +165,8 @@ body {
   background-image: url(../images/water-my-plants.PNG);
 }
 
-.Contact form {
+.Contact input {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  width: 50%;
 }

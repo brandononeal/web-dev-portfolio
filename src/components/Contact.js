@@ -1,69 +1,70 @@
-import React from "react";
-import { Form, Input, Button } from "antd";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
+const initialFormValues = {
+  name: "",
+  email: "",
+  message: "",
 };
-/* eslint-disable no-template-curly-in-string */
-
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-  },
-};
-/* eslint-enable no-template-curly-in-string */
 
 function Contact() {
-  const onFinish = (values) => {
-    console.log(values);
+  const [formValues, setFormValues] = useState(initialFormValues);
+
+  const change = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_oobez2q",
+        "template_le28f9b",
+        e.target,
+        "user_HqJH1X6PWAfsFb0iPEM14"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    setFormValues(initialFormValues);
   };
 
   return (
     <div className="Contact">
       <br />
-      <Form
-        {...layout}
-        name="nest-messages"
-        onFinish={onFinish}
-        validateMessages={validateMessages}
-      >
-        <Form.Item
-          name={["user", "name"]}
-          label="Name"
-          rules={[
-            {
-              required: true,
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name={["user", "email"]}
-          label="Email"
-          rules={[
-            {
-              type: "email",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item name={["user", "message"]} label="Message">
-          <Input.TextArea />
-        </Form.Item>
-        <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
-        </Form.Item>
-      </Form>
+      <br />
+      <form onSubmit={sendEmail}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formValues.name}
+          onChange={change}
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          value={formValues.email}
+          onChange={change}
+        />
+        <input
+          type="text"
+          name="message"
+          placeholder="Message"
+          value={formValues.message}
+          onChange={change}
+        />
+        <br />
+        <button>Submit</button>
+      </form>
     </div>
   );
 }
