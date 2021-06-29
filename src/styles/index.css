@@ -56,9 +56,6 @@ body {
   0% {
     opacity: 0;
   }
-  45% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -109,7 +106,7 @@ body {
 
 .Home h2 {
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 
 .Home a {

@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div className="Navbar">
       <h2>
-        <Link to="/">Brandon O'Neal</Link>
+        <Link to="/home">Brandon O'Neal</Link>
       </h2>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="projects" icon={<CodeOutlined />}>

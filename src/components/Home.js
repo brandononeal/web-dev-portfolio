@@ -4,12 +4,6 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="Home">
-      <div className="typewriter">
-        <div className="typewriter-text">
-          <span>$</span> cd portfolio
-        </div>
-      </div>
-      <br />
       <h2>
         <Link to="/projects">Projects/</Link>
       </h2>
