@@ -37,6 +37,15 @@ function Home() {
           LinkedIn/
         </a>
       </h2>
+      <h2>
+        <a
+          href="https://www.wyzant.com/tutors/bran"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Wyzant/
+        </a>
+      </h2>
     </div>
   );
 }
