@@ -14,7 +14,7 @@ function Home() {
         <a
           href="https://docs.google.com/document/d/1DV-lUf8bv02Be29jFoH-4b_TUGkMLsYCSMpRE5BTtvQ/edit"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Resume/
         </a>
@@ -23,7 +23,7 @@ function Home() {
         <a
           href="https://www.github.com/brandononeal"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           GitHub/
         </a>
@@ -32,7 +32,7 @@ function Home() {
         <a
           href="https://www.linkedin.com/in/brandonaoneal"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           LinkedIn/
         </a>
@@ -41,7 +41,7 @@ function Home() {
         <a
           href="https://www.wyzant.com/tutors/bran"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Wyzant/
         </a>

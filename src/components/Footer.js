@@ -15,21 +15,21 @@ function Footer() {
         <a
           href="https://docs.google.com/document/d/1DV-lUf8bv02Be29jFoH-4b_TUGkMLsYCSMpRE5BTtvQ/edit"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FileTextOutlined /> Resume{" "}
         </a>
         <a
           href="https://www.github.com/brandononeal"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <GithubOutlined /> GitHub{" "}
         </a>
         <a
           href="https://www.linkedin.com/in/brandonaoneal"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <LinkedinOutlined /> LinkedIn
         </a>
